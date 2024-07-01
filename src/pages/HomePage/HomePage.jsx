@@ -1,4 +1,4 @@
-import "./Home.scss";
+import "./HomePage.scss";
 
 const Home = () => {
   return (
