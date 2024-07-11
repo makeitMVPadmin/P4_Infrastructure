@@ -20,7 +20,7 @@ To begin working on your project, follow these steps:
    ```bash
    git clone https://github.com/MakeItMVP/LaunchAcademyStarter.git
    ```
-````
+
 
 2. Change your working directory to the cloned repository:
 
