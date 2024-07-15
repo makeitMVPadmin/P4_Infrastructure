@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
+
 // Set up our config for Firebase
 // Define these in your env file, the values can be found in the project settings page on Firebase
 const firebaseConfig = {
@@ -29,7 +30,7 @@ const Firebase = () => {
             <h1 className="home__title"> Welcome to the Firebase page.</h1>
             <div>
                 <h3>Here's are the communities currently in the back end:</h3>
-                {data.docs.map((doc) => <p key={doc.id}>{doc.id}</p>)}
+                {data.docs.map((doc) => <p key={doc.id}>{doc._document.data.value.mapValue.fields.communityName.stringValue}</p>)}
             </div>
         </div>
     );
